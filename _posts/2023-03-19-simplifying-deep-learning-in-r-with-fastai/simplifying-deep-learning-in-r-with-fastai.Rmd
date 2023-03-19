@@ -1,0 +1,35 @@
+---
+title: "Simplifying Deep Learning in R with Fast.ai"
+description: >
+  Fast.ai is an open-source deep learning library that simplifies the process of building and training advanced models for tasks such as computer vision, natural language processing, and tabular data analysis. The library offers a user-friendly interface and powerful tools to achieve state-of-the-art performance. The fast.ai wrapper provides seamless integration with an R environment, allowing users to leverage fast.ai's capabilities and build deep learning models easily. 
+author:
+  - name: Turgut Abdullayev
+    affiliation: Kapital Bank
+    affiliation_url: https://www.kapitalbank.az/
+slug: keydanagcnn1
+date: 2023-03-09
+categories:
+  - Packages/Releases
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+preview: images/fastai.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, fig.width = 6, fig.height = 6)
+```
+
+
+## Introduction
+
+Deep learning has revolutionized the field of artificial intelligence by allowing computers to learn from large amounts of data and make accurate predictions or classifications. Fast.ai is an open-source deep learning library that provides a user-friendly interface for building and training deep learning models. It offers state-of-the-art performance on a wide range of tasks, including computer vision, natural language processing, and tabular data analysis. In this blog post, we will focus on how the fast.ai wrapper for R can simplify the process of building and training deep learning models in R. 
+
+```{r}
+fastai::install_fastai(gpu = FALSE, cuda_version = '11.6', overwrite = FALSE)
+```
+
+
+
+
